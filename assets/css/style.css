@@ -3,18 +3,11 @@
 /***************************************************/
 
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-
 /* Sets font family for page */
 
 body {
   font-family: "Open Sans";
   background-color: #e2e2e2;
-  margin-bottom: 60px;
 }
 
 /* Sets header height and color */
@@ -178,6 +171,11 @@ img.image-styling {
     margin: auto;
   }
 
+  a.navbar-style {
+    padding: 60px 0 0 40px;
+    font-size: 16px;
+  }
+
   /* Thinning out sidebar */
 
   .sidebar-left {
@@ -241,6 +239,14 @@ img.image-styling {
       font-size: 16px;
   }
 
+  .sidebar-styling {
+    font-size: 16px;
+  } 
+
+  .sidebar-left {
+    min-width: 100px;
+  }
+
   /* Portfolio area image styling */
 
   img.image-styling {
@@ -260,12 +266,13 @@ img.image-styling {
 
 @media screen and (max-width: 600px) {
 
+  
   #header-back {
-      height: 250px;
+      height: 270px;
   }
 
   header {
-      height: 225px;
+      height: 245px;
   }
 
   #logo {
@@ -275,5 +282,33 @@ img.image-styling {
   a.navbar-style {
       font-size: 12px;
   }
+
+  .sidebar-left {
+    margin: 20px 0 20px 0;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    #header-back {
+      height: 240px;
+  }
+
+  header {
+      height: 215px;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+
+  #header-back {
+    height: 220px;
+}
+
+header {
+    height: 195px;
+}
 
 }
