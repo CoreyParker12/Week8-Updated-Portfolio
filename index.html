@@ -1,70 +1,142 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- <link rel="icon" href="../../favicon.ico"> -->
+<!DOCTYPE html>
+<html lang="en-US">
 
-    <title>Corey Parker Design</title>
+    <!-- HEAD -->
+    <!-- For Metadata -->
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+        <title>Corey Parker Design</title>
+        <meta name="Welcome to Corey Parker Design!">
+    </head>
 
-    <!-- Custom styles for this template -->
-    <link href="./assets/css/style.css" rel="stylesheet">
+    <!-- HEADER -->
+    <!-- Establishes the logo and navbar-->
 
-  </head>
+    <body>
+        <div id="header-back">
+            <div id="content-width">
+                <header>
+                    <img id="logo" src="./assets/images/logo.png" alt="Logo for Corey Parker Design"/>
+                    <div class="navbar">
+                        <a class="navbar-style" href="#about-me"> About Me </a>
+                        <a class="navbar-style" href="#my-work"> My Work </a>
+                        <a class="navbar-style" href="#contact-me"> Contact Me </a>
+                    </div>
+                </header>
 
-  <body>
+                    <!-- MAIN CONTENT -->                
+                    <!-- About Me Section -->
+                
+                <section class="flex-it">
+                    <aside class="sidebar-left">
+                        <div id="about-me" class="sidebar-styling">
+                            ABOUT ME
+                        </div>
+                    </aside>    
+                    <div class="regular-content">
+                        <p>
+                            My name is Corey Parker. This is a portfolio page with information about me. Please click the links at the top of this page if you would like to be directed around the webite.
+                            I'm an electrical engineer in Atlanta, GA. 
+                            I enjoy spending my time with friends, going to the lake, and playing video games.
+                        </P>
+                    </div>
+                </section>
+        
+                    <!-- My Work Section -->
+        
+                <section class="flex-it">
+                    
+                    <aside class="sidebar-left">
+                        <div id="my-work" class="sidebar-styling">
+                            MY WORK
+                        </div>
+                    </aside>
+        
+                    <main id="portfolio-wrapper">   
+                        <div class="portfolio">
+                            <a class="box-hover" href="http://stinkybass.com/">
+                                <img src="./assets/images/Stinky-Bass.PNG" class="image-styling" alt="Link to the Stinky Bass home page."/>
+                                <div class="portfolio-text-style">
+                                    <p>
+                                        STINKY BASS
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+        
+                        <div class="portfolio">
+                            <a class="box-hover" href="https://coreyparker12.github.io/Week1-Homework-CodeRefactor-CoreyParker/">
+                             <img src="./assets/images/Horiseon.jpg" class="image-styling" alt="Link to Horiseon's SEO home page."/>
+                                <div class="portfolio-text-style">
+                                    <p>
+                                        HORISEON'S SEO
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+        
+                        <div class="portfolio">
+                            <a class="box-hover" href="https://www.pokemon.com/us/">
+                                <img src="./assets/images/pokemon-logo.jpg" class="image-styling" alt="Link to the Pokemon home page."/>
+                                <div class="portfolio-text-style">
+                                    <p>
+                                        POKEMON
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+        
+                        <div class="portfolio">
+                            <a class="box-hover" href="https://www.lego.com/en-us">
+                                <img src="./assets/images/lego-logo.JPG" class="image-styling" alt="Link to the Lego home page."/>
+                                <div class="portfolio-text-style">
+                                    <p>
+                                        LEGO
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+        
+                        <div class="portfolio">
+                            <a class="box-hover" href="https://www.minecraft.net/en-us/">
+                                <img src="./assets/images/minecraft-logo.jpg" class="image-styling" alt="Link to the minecraft home page."/>
+                                <div class="portfolio-text-style">
+                                    <p>
+                                        MINECRAFT
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+        
+                    </main>
 
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Corey Parker Design</a>
+                </section>
+        
+                    <!-- Contact Section-->
+        
+                <section class="flex-it">
+                    <aside class="sidebar-left">
+                        <div id="contact-me" class="sidebar-styling">
+                            CONTACT
+                        </div>
+                    </aside>    
+                    <div class="regular-content">
+                        <p>
+                            You can reach me at coreyparker012@gmail.com
+                        </p>
+                    </div>
+                </section>
+            </div>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-
-    <!-- Begin page content -->
-    <div class="container">
-      <div class="page-header">
-        <h1>Sticky footer with fixed navbar</h1>
-      </div>
-      <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>body &gt; .container</code>.</p>
-      <p>Back to <a href="../sticky-footer/">the default sticky footer</a> minus the navbar.</p>
-    </div>
-
-    <footer class="footer">
-      <div class="container">
-        <p class="text-muted">Place sticky footer content here.</p>
-      </div>
-    </footer>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-  </body>
-  </body>
+        <div id="footer">
+            Hello
+        </div>
+    </body>
 </html>
+
+

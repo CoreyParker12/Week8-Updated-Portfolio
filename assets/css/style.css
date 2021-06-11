@@ -1,37 +1,279 @@
-/* Sticky footer styles
--------------------------------------------------- */
+/***************************************************/
+/******************* PAGE SETUP ********************/
+/***************************************************/
+
+
 html {
   position: relative;
   min-height: 100%;
 }
+
+
+/* Sets font family for page */
+
 body {
-  margin-bottom: 60px; /* Margin bottom by footer height */
+  font-family: "Open Sans";
+  background-color: #e2e2e2;
+  margin-bottom: 60px;
 }
-.footer {
+
+/* Sets header height and color */
+/* Stretches past the #content-width */
+
+#header-back {
+  width: 100%;
+  height: 200px;
+  background-color: #6e6e6e;
+}
+
+/* Pulls content in to center of page */
+
+#content-width {
+  width: 80%;
+  margin: auto;
+}
+
+
+/**************************************************/
+/********************* HEADER *********************/
+/**************************************************/
+
+/* Sets the header background */
+/* Pushes content away from the page border */
+
+header {
+  padding: 25px;
+
+}
+
+/* Pushes navbar to right and lines it with logo */
+
+div.navbar {
+  display: flex;
+  float: right;
+}
+
+/* Navbar styling and hover */
+
+a.navbar-style {
+  padding: 60px 0px 0px 80px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a.navbar-style:hover {
+  font-weight: bold;
+  text-decoration: none;
+  color: #000131;
+}
+
+/***************************************************/
+/********************* CONTENT *********************/
+/***************************************************/
+
+.flex-it {
+  display: flex;
+}
+
+#portfolio-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Sets up left sidebar container */
+
+.sidebar-left {
+  display: flex;
+  align-items: center;
+  min-width: 220px;
+  padding: 20px 20px 20px 20px;
+  margin: 20px 20px 20px 0;
+  border-right: solid 5px;
+}
+
+/* Sidebar font styling */
+
+.sidebar-styling {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000131;
+}
+
+/* Regular text styling */
+
+.regular-content {
+  flex: 80%;
+  margin: 20px 20px 20px 20px ;
+  font-size: 20px;
+  line-height: 200%;
+}
+
+/* Moves portfolio area away from edges */
+
+.portfolio {
+  margin: 20px 20px 20px 20px;
+}
+
+/*Transparent hover over portfolio images */
+
+.box-hover:hover {
+  opacity: 70%;
+}
+
+/* Image border styling */
+
+img.image-styling {
+ width: 100%;
+ border-style: solid;
+ border-width: 12px 12px 50px 12px;
+ border-color: #6e6e6e;
+}
+
+/* Image text styling */
+
+.portfolio-text-style {
+  display: flex;
+  align-items: center;
+  position: relative;
+  bottom: 40px;
+  padding: 0 0 0 10px;
+}
+
+.portfolio-text-style p {
+  font-size: 25px;
+  color: #000131;
+  font-weight: bold;
+}
+
+/* Removing underline from link */
+
+.portfolio a:link {
+  text-decoration: none;
+}
+
+#footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 60px; /* Set the fixed height of the footer here */
+  height: 100px; /* Set the fixed height of the footer here */
   background-color: #f5f5f5;
+  padding: 20px 0 20px 0;
 }
 
 
-/* Custom page CSS
- * Not required for template or sticky footer method.
- * -------------------------------------------------- */
+/***************************************************/
+/********************* RESPONSIVE ******************/
+/***************************************************/
 
-body > .container {
-  padding: 60px 15px 0;
-}
-.container .text-muted {
-  margin: 20px 0;
+/**************** RESPONSIVE 1300px ****************/
+
+@media screen and (max-width: 1300px) { */
+
+  /* Giving content more room */
+
+  #content-width {
+    width: 90%;
+    margin: auto;
+  }
+
+  /* Thinning out sidebar */
+
+  .sidebar-left {
+    min-width: 120px;
+    padding: 10px 10px 10px 10px;
+    border-right: solid 2px;
+  } 
+
+   .sidebar-styling {
+    font-size: 18px;
+  } 
+
+  /* Sizing doen content */
+
+   .regular-content {
+    flex: 80%;
+    margin: 20px 20px 20px 20px ;
+    font-size: 14px;
+    line-height: 150%;
+  }   
 }
 
-.footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
+/**************** RESPONSIVE 900px ****************/
+
+@media screen and (max-width: 950px) {
+
+  #content-width {
+    width: 95%;
+    margin: auto;
+  }
+  
+  /* Adjusting header height */
+
+  #header-back {
+      height: 225px;
+      background-color: #6e6e6e;
+  }
+
+  header {
+      padding: 25px 0 0 0;
+      height: 200px;
+  }
+
+  /* Centering logo */
+
+  #logo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  /* Styling navbar to sit center under logo */
+
+  div.navbar {
+      width: 100%;
+      justify-content: center;
+  }
+
+  a.navbar-style {
+      padding: 30px 30px 0px 30px;
+      font-size: 16px;
+  }
+
+  /* Portfolio area image styling */
+
+  img.image-styling {
+      border-width: 8px 8px 50px 8px;
+      height: auto;
+   }
+   
+   .portfolio-text-style {
+       bottom: 40px;
+       padding: 0 0 0 10px;
+   }
+   
+   .portfolio-text-style p {
+       font-size: 18px;
+   }
 }
 
-code {
-  font-size: 80%;
+@media screen and (max-width: 600px) {
+
+  #header-back {
+      height: 250px;
+  }
+
+  header {
+      height: 225px;
+  }
+
+  #logo {
+      width: 80%;
+  }
+
+  a.navbar-style {
+      font-size: 12px;
+  }
+
 }
