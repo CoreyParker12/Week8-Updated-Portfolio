@@ -22,7 +22,7 @@ body {
 /* Pulls content in to center of page */
 
 #content-width {
-  width: 80%;
+  width: 1250px;
   margin: auto;
 }
 
@@ -109,6 +109,11 @@ a.navbar-style:hover {
   margin: 20px 20px 20px 20px;
 }
 
+#spotlight-content {
+  flex-basis: 100%;
+  object-fit: cover;
+}
+
 /*Transparent hover over portfolio images */
 
 .box-hover:hover {
@@ -162,7 +167,7 @@ img.image-styling {
 
 /**************** RESPONSIVE 1300px ****************/
 
-@media screen and (max-width: 1300px) { */
+@media screen and (max-width: 1300px) { 
 
   /* Giving content more room */
 
@@ -184,23 +189,27 @@ img.image-styling {
     border-right: solid 2px;
   } 
 
-   .sidebar-styling {
+  .sidebar-styling {
     font-size: 18px;
   } 
 
   /* Sizing doen content */
 
    .regular-content {
-    flex: 80%;
-    margin: 20px 20px 20px 20px ;
-    font-size: 14px;
-    line-height: 150%;
+      flex: 80%;
+      margin: 20px 20px 20px 20px ;
+      font-size: 14px;
+      line-height: 150%;
   }   
 }
 
 /**************** RESPONSIVE 900px ****************/
 
 @media screen and (max-width: 950px) {
+
+  #portfolio-wrapper {
+    justify-content: center;
+  }
 
   #content-width {
     width: 95%;
@@ -210,33 +219,33 @@ img.image-styling {
   /* Adjusting header height */
 
   #header-back {
-      height: 225px;
-      background-color: #6e6e6e;
+    height: 225px;
+    background-color: #6e6e6e;
   }
 
   header {
-      padding: 25px 0 0 0;
-      height: 200px;
+    padding: 25px 0 0 0;
+    height: 200px;
   }
 
   /* Centering logo */
 
   #logo {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* Styling navbar to sit center under logo */
 
   div.navbar {
-      width: 100%;
-      justify-content: center;
+    width: 100%;
+    justify-content: center;
   }
 
   a.navbar-style {
-      padding: 30px 30px 0px 30px;
-      font-size: 16px;
+    padding: 30px 30px 0px 30px;
+    font-size: 16px;
   }
 
   .sidebar-styling {
@@ -255,32 +264,31 @@ img.image-styling {
    }
    
    .portfolio-text-style {
-       bottom: 40px;
-       padding: 0 0 0 10px;
+      bottom: 40px;
+      padding: 0 0 0 10px;
    }
    
    .portfolio-text-style p {
-       font-size: 18px;
+      font-size: 18px;
    }
 }
 
 @media screen and (max-width: 600px) {
 
-  
   #header-back {
-      height: 270px;
+    height: 270px;
   }
 
   header {
-      height: 245px;
+    height: 245px;
   }
 
-  #logo {
-      width: 80%;
+  #logo { 
+    width: 80%;
   }
 
   a.navbar-style {
-      font-size: 12px;
+    font-size: 12px;
   }
 
   .sidebar-left {
@@ -291,8 +299,8 @@ img.image-styling {
 
 @media screen and (max-width: 550px) {
 
-    #header-back {
-      height: 240px;
+  #header-back {
+    height: 240px;
   }
 
   header {
@@ -305,10 +313,10 @@ img.image-styling {
 
   #header-back {
     height: 220px;
-}
+  }
 
-header {
+  header {
     height: 195px;
-}
+  }
 
 }
