@@ -175,7 +175,7 @@ img.image-styling {
 }
 
 #linkedin-icon {
-  vertical-align: middle;
+  vertical-align: middle; 
   padding-top: 5px;
 }
 
@@ -193,6 +193,10 @@ img.image-styling {
   #content-width {
     width: 90%;
     margin: auto;
+  }
+
+  #portfolio-wrapper {
+    justify-content: center;
   }
 
   a.navbar-style {
@@ -225,10 +229,6 @@ img.image-styling {
 /**************** RESPONSIVE 900px ****************/
 
 @media screen and (max-width: 950px) {
-
-  #portfolio-wrapper {
-    justify-content: center;
-  }
 
   #content-width {
     width: 95%;
