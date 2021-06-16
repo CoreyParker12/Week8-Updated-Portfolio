@@ -169,6 +169,15 @@ img.image-styling {
   padding: 15px 5px 5px 5px;
 }
 
+#resume {
+  text-decoration: none;
+}
+
+#resume {
+  text-decoration: none;
+  color: white;
+}
+
 #github-icon {
   vertical-align: middle;
   padding-top: 5px;
