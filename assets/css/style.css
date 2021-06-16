@@ -153,6 +153,21 @@ img.image-styling {
   text-decoration: none;
 }
 
+.github-links {
+    text-decoration: none;
+    color: black;
+}
+
+.github-links:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.github-links:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
 #footer {
   position: fixed;
   left: 0;
@@ -171,9 +186,10 @@ img.image-styling {
 
 #resume {
   text-decoration: none;
+  color: white;
 }
 
-#resume {
+#resume:visited {
   text-decoration: none;
   color: white;
 }
